@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thierno Amadou Malady Diallo — Data Engineer & Développeur Full-Stack</title>
+  <meta name="description" content="Portfolio de Thierno Amadou Malady Diallo, Data Engineer, Data Analyst et Développeur Full-Stack basé à Dakar, Sénégal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ========== NAVIGATION ========== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#accueil" class="nav__logo">TD<span>.</span></a>
+      <button class="nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links">
+        <a href="#apropos">À propos</a>
+        <a href="#experience">Expérience</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#formation">Formation</a>
+        <a href="#contact" class="btn btn--small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== ACCUEIL ========== -->
+    <section id="accueil" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__hello mono">Bonjour, je suis</p>
+          <h1 class="hero__name">Thierno Amadou<br />Malady <span class="accent">Diallo</span></h1>
+          <h2 class="hero__role">
+            <span class="typed" data-words='["Data Engineer","Data Analyst","Développeur Full-Stack"]'>Data Engineer</span><span class="cursor">|</span>
+          </h2>
+          <p class="hero__pitch">
+            Je conçois des pipelines de données fiables, des tableaux de bord pour l'aide à la décision
+            et des applications web robustes, sécurisées et évolutives.
+          </p>
+          <div class="hero__cta">
+            <a href="#projets" class="btn">Voir mes projets</a>
+            <a href="#contact" class="btn btn--ghost">Me contacter</a>
+          </div>
+          <ul class="hero__meta mono">
+            <li>📍 Dakar, Sénégal</li>
+            <li>💼 Télétravail ou présentiel</li>
+          </ul>
+        </div>
+        <div class="hero__photo">
+          <div class="avatar">
+            <img src="assets/photo.jpg?v=3" alt="Photo de Thierno Amadou Malady Diallo"
+                 onerror="this.remove(); document.querySelector('.avatar').classList.add('avatar--fallback')" />
+            <span class="avatar__initials">TD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== À PROPOS ========== -->
+    <section id="apropos" class="section">
+      <div class="container">
+        <h2 class="section__title"><span class="mono">01.</span> À propos</h2>
+        <div class="about reveal">
+          <div class="about__text">
+            <p>
+              Data Engineer et Développeur Full-Stack, je combine une solide formation en
+              <strong>systèmes d'information</strong> avec une approche orientée
+              <strong>problème métier</strong> et <strong>performance technique</strong>.
+            </p>
+            <p>
+              Côté data, je mets en place des pipelines ETL (StreamSets, PySpark, Airflow), je calcule
+              des KPI et je conçois des tableaux de bord Power BI pour l'aide à la décision.
+              Côté développement, je construis des architectures microservices (FastAPI, Spring Boot),
+              des interfaces Vue.js / React et des pipelines CI/CD jusqu'au déploiement sur le cloud (AWS EKS).
+            </p>
+            <p>
+              Formé à la <strong>Sonatel Academy</strong> et à l'<strong>Université Alioune Diop</strong>,
+              je suis actuellement <strong>stagiaire Data Engineer &amp; Data Analyst chez Sonatel</strong>.
+            </p>
+          </div>
+          <ul class="about__stats">
+            <li><strong>3</strong><span>projets data en stage chez Sonatel</span></li>
+            <li><strong>2</strong><span>projets full-stack déployés</span></li>
+            <li><strong>Master</strong><span>Systèmes d'Information</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPÉRIENCE ========== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section__title"><span class="mono">02.</span> Expérience professionnelle</h2>
+        <div class="job reveal">
+          <h3>Stagiaire Data Engineer &amp; Data Analyst <span class="at">@ Sonatel</span></h3>
+          <span class="mono">Dakar · Depuis juil. 2026</span>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__head">
+              <h3>Fibre360</h3>
+              <span class="timeline__date mono">Depuis sept. 2026</span>
+            </div>
+            <ul>
+              <li>Identification des tables sources et des colonnes pertinentes pour le calcul des KPI.</li>
+              <li>Traitement et analyse des données avec Python et PySpark.</li>
+              <li>Implémentation des indicateurs de performance avec PySpark.</li>
+              <li>Mise à disposition des données calculées à l'équipe de visualisation (travail collaboratif).</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>PySpark</span><span>KPI</span></div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <div class="timeline__head">
+              <h3>Fiabilisation</h3>
+              <span class="timeline__date mono">Août 2026</span>
+            </div>
+            <ul>
+              <li>Développement de scripts Python pour extraire les données depuis une API.</li>
+              <li>Analyses exploratoires (EDA) et export des données traitées en CSV.</li>
+              <li>Intégration dans Power BI pour le calcul des KPI et conception de tableaux de bord interactifs.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>API</span><span>EDA</span><span>Power BI</span></div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <div class="timeline__head">
+              <h3>Flash Production Daily &amp; Weekly</h3>
+              <span class="timeline__date mono">Juil. 2026 — Sept. 2026</span>
+            </div>
+            <ul>
+              <li>Pipelines ETL avec StreamSets : extraction, transformation et chargement dans Elasticsearch.</li>
+              <li>Calcul et suivi des KPI avec DAX.</li>
+              <li>Tableaux de bord Power BI interactifs pour le suivi de la production quotidienne et hebdomadaire.</li>
+            </ul>
+            <div class="tags"><span>StreamSets</span><span>Elasticsearch</span><span>DAX</span><span>Power BI</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJETS ========== -->
+    <section id="projets" class="section">
+      <div class="container">
+        <h2 class="section__title"><span class="mono">03.</span> Projets réalisés</h2>
+
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon">🗳️</span>
+              <span class="project__badge mono">Projet de mémoire · 10 mois</span>
+            </div>
+            <h3>Plateforme de remontée automatique des résultats électoraux</h3>
+            <p>
+              Analyse, conception et développement d'une plateforme en architecture microservices,
+              avec un pipeline CI/CD complet et un déploiement sur Kubernetes (Amazon EKS).
+            </p>
+            <ul class="project__points">
+              <li>Microservices avec FastAPI et Spring Boot</li>
+              <li>Base de données PostgreSQL</li>
+              <li>Frontend Vue.js</li>
+              <li>CI/CD GitHub Actions → Amazon EKS</li>
+            </ul>
+            <div class="tags">
+              <span>FastAPI</span><span>Spring Boot</span><span>Vue.js</span><span>PostgreSQL</span>
+              <span>Docker</span><span>GitHub Actions</span><span>AWS EKS</span>
+            </div>
+            <div class="project__links">
+              <!-- Remplace "#" par tes vrais liens, ou supprime les lignes -->
+              <a href="#" aria-disabled="true" class="link-muted">Code source (bientôt)</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon">🤖</span>
+              <span class="project__badge mono">Sonatel Academy · Oct. 2025</span>
+            </div>
+            <h3>Application web full-stack intégrant des modèles d'IA</h3>
+            <p>
+              Intégration de modèles d'intelligence artificielle développés par l'équipe dans une API REST,
+              conception de l'interface web, puis mise en production.
+            </p>
+            <ul class="project__points">
+              <li>API REST FastAPI servant les modèles d'IA</li>
+              <li>Frontend Vue.js</li>
+              <li>Déploiement en production sur Render</li>
+            </ul>
+            <div class="tags">
+              <span>FastAPI</span><span>Vue.js</span><span>IA / ML</span><span>Render</span>
+            </div>
+            <div class="project__links">
+              <a href="#" aria-disabled="true" class="link-muted">Démo (bientôt)</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COMPÉTENCES ========== -->
+    <section id="competences" class="section">
+      <div class="container">
+        <h2 class="section__title"><span class="mono">04.</span> Compétences</h2>
+
+        <div class="skills">
+          <div class="skill reveal">
+            <h3>🐍 Langages</h3>
+            <div class="tags"><span>Python</span><span>SQL</span><span>Java</span><span>JavaScript</span><span>Scala</span><span>Bash</span><span>HTML/CSS</span></div>
+          </div>
+          <div class="skill reveal">
+            <h3>⚙️ Data Engineering &amp; ETL</h3>
+            <div class="tags"><span>Apache Spark / PySpark</span><span>Airflow</span><span>Kafka</span><span>DBT</span><span>Pandas</span><span>Talend</span><span>NiFi</span><span>StreamSets</span><span>SSIS</span><span>Hive</span></div>
+          </div>
+          <div class="skill reveal">
+            <h3>📊 BI &amp; Data Visualization</h3>
+            <div class="tags"><span>Power BI</span><span>DAX</span><span>Matplotlib</span><span>Seaborn</span><span>Chart.js</span></div>
+          </div>
+          <div class="skill reveal">
+            <h3>🗄️ Bases de données</h3>
+            <div class="tags"><span>PostgreSQL</span><span>MySQL</span><span>SQL Server</span><span>MongoDB</span><span>Cassandra</span><span>Neo4j</span><span>Redis</span><span>Elasticsearch</span><span>HDFS</span><span>Impala</span></div>
+          </div>
+          <div class="skill reveal">
+            <h3>🧩 Backend &amp; Frontend</h3>
+            <div class="tags"><span>FastAPI</span><span>Flask</span><span>Spring Boot</span><span>Node.js / Express</span><span>Vue.js</span><span>React</span><span>Angular</span></div>
+          </div>
+          <div class="skill reveal">
+            <h3>☁️ DevOps &amp; Cloud</h3>
+            <div class="tags"><span>Docker</span><span>Kubernetes</span><span>AWS (EKS)</span><span>GitHub Actions</span><span>Jenkins</span><span>CI/CD</span><span>Linux</span></div>
+          </div>
+        </div>
+
+        <div class="soft reveal">
+          <div>
+            <h3>Savoir-être</h3>
+            <div class="tags tags--soft"><span>Agile</span><span>Esprit critique</span><span>Collaboration</span><span>Dynamique</span></div>
+          </div>
+          <div>
+            <h3>Langues</h3>
+            <div class="tags tags--soft"><span>Français — professionnel</span><span>Anglais — B1</span></div>
+          </div>
+          <div>
+            <h3>Centres d'intérêt</h3>
+            <div class="tags tags--soft"><span>📚 Lecture</span><span>⚽ Football</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FORMATION ========== -->
+    <section id="formation" class="section">
+      <div class="container">
+        <h2 class="section__title"><span class="mono">05.</span> Diplômes &amp; formations</h2>
+        <div class="education">
+          <article class="edu reveal">
+            <span class="edu__date mono">Mai 2023 — Déc. 2025</span>
+            <h3>Master Systèmes d'Information</h3>
+            <p>Université Alioune Diop, Bambey</p>
+          </article>
+          <article class="edu reveal">
+            <span class="edu__date mono">Fév. 2025 — Déc. 2025</span>
+            <h3>Développeur Data</h3>
+            <p>Sonatel Academy, Dakar</p>
+          </article>
+          <article class="edu reveal">
+            <span class="edu__date mono">Déc. 2019 — Mars 2023</span>
+            <h3>Licence Systèmes, Réseaux et Télécommunications</h3>
+            <p>Université Alioune Diop, Bambey</p>
+          </article>
+          <article class="edu reveal">
+            <span class="edu__date mono">2019</span>
+            <h3>Baccalauréat Scientifique (S2)</h3>
+            <p>École privée La Familiale, Keur Massar</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section contact">
+      <div class="container contact__inner reveal">
+        <h2 class="section__title section__title--center"><span class="mono">06.</span> Contact</h2>
+        <p class="contact__text">
+          Je suis ouvert aux opportunités en <strong>Data Engineering</strong>, <strong>Data Analysis</strong>
+          et <strong>développement Full-Stack</strong>. N'hésitez pas à m'écrire !
+        </p>
+        <a href="mailto:thiernomalady.diallo@gmail.com" class="btn btn--big">thiernomalady.diallo@gmail.com</a>
+        <div class="contact__links">
+          <a href="https://www.linkedin.com/in/thierno-amadou-malady-diallo-375554281" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/thierno11" target="_blank" rel="noopener">GitHub</a>
+          <a href="assets/cv-data.pdf" download>CV Data ⬇</a>
+          <a href="assets/cv-fullstack.pdf" download>CV Full-Stack ⬇</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">© <span id="year"></span> Thierno Amadou Malady Diallo</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
